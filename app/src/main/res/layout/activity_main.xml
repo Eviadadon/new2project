@@ -4,23 +4,55 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center"
     android:orientation="vertical"
-    android:gravity="end"
     tools:context=".MainActivity">
 
-    <ListView
+
+    <Space
         android:layout_width="match_parent"
-        android:id="@+id/lv"
         android:layout_height="0dp"
-        android:layout_weight="0.9">
+        android:layout_weight="10"/>
 
-    </ListView>
-
-    <Button
-        android:id="@+id/bt"
-        android:layout_width="wrap_content"
+    <ListView
+        android:id="@+id/LV"
+        android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="0.1"
-        android:text="Button" />
+        android:layout_weight="55"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="15"
+        android:orientation="horizontal">
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="33" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="33"
+            android:text="next"
+            android:onClick="bttn"
+            tools:ignore="OnClick" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="33" />
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"/>
 
 </LinearLayout>
